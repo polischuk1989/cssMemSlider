@@ -17,10 +17,7 @@ body{
     align-items: center;
     
 }
-.pic{
-    max-width: 1280px;
-    max-height: 600px;
-}
+
 .slider{
     position: relative;
     overflow: hidden;
@@ -45,12 +42,14 @@ body{
     position: absolute;
     visibility: hidden;
 }
-
-.slider-nav{
-    position: absolute;
-    bottom: 15px;
+.information{
     display: flex;
-    justify-content: center;
+}
+.slider-nav{
+   
+   
+    display: flex;
+    justify-content: space-between;
 }
 .slider-nav  .slider-nav-item{
     width: 60px;
@@ -64,9 +63,7 @@ body{
 .slider-nav  .slider-nav-item:hover{
     background-color: #fff;
 }
-.slider-nav  .slider-nav-item:active{
-    background-color: #fff;
-}
+
 
 #s1:checked ~ .s1{
     margin-left: 0;
