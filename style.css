@@ -5,7 +5,7 @@
 }
 body{
     position: relative;
-    background-color: rgb(154, 154, 211);
+    background-color: black;
 }
 
 .wrapper{
@@ -38,6 +38,7 @@ body{
     max-width: 100%;
     height: auto;
 }
+
 .slider-items input {
     position: absolute;
     visibility: hidden;
@@ -47,13 +48,12 @@ body{
 }
 .slider-nav{
    
-   
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .slider-nav  .slider-nav-item{
-    width: 60px;
-    height: 15px;
+    width: 2vw;
+    height: 2vh;
     border:  2px solid #fff;
     margin: 7px;
     cursor: pointer;
@@ -81,5 +81,20 @@ body{
 #s5:checked ~ .s1{
     margin-left: -80%;
 }
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(223, 226, 15);
+    text-transform: uppercase;
+}
+@media screen and (max-width: 568px) {
+    .slider-nav{
+        justify-content: center;
+    }
+    .slider-nav-item{
+        margin: 0 5px 0 5px;
+    }
+}
+
+
 
 
